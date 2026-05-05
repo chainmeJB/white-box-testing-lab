@@ -4,6 +4,7 @@ def test_missing_credentials():
     db = {}
     assert authenticate_user("", "pass", db) == "Missing credentials"
     assert authenticate_user("user", "", db) == "Missing credentials"
+    assert authenticate_user("", "", db) == "Missing credentials"
 
 def test_user_not_found():
     db = {}
