@@ -1,2 +1,11 @@
 [run]
-omit = test_*.py
+branch = True
+source = .
+
+[report]
+show_missing = True
+omit =
+    test_*.py
+    tests/*
+    setup.py
+    build_cfg.py
